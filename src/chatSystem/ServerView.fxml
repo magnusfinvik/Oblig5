@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane prefHeight="271.0" prefWidth="365.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chatSystem.ServerController">
+<GridPane prefHeight="271.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatSystem.ServerController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="198.0" />
   </columnConstraints>
   <rowConstraints>
-    <RowConstraints maxHeight="195.0" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="216.0" minHeight="0.0" prefHeight="158.0" vgrow="SOMETIMES" />
-    <RowConstraints maxHeight="81.0" minHeight="0.0" prefHeight="81.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="271.0" minHeight="0.0" prefHeight="271.0" vgrow="SOMETIMES" />
+      <RowConstraints />
   </rowConstraints>
    <children>
-      <TextField fx:id="messageField" prefHeight="84.0" prefWidth="365.0" GridPane.rowIndex="2" />
-      <TextField fx:id="nameField" prefHeight="31.0" prefWidth="244.0" />
-      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <TextArea fx:id="textOutput" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </GridPane>

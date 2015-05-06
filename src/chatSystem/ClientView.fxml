@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatSystem.ClientController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="359.0" minWidth="213.0" prefWidth="359.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="143.0" minHeight="0.0" prefHeight="15.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="283.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextArea fx:id="messageArea" prefHeight="200.0" prefWidth="200.0" promptText="Message:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextArea fx:id="messageOutput" prefHeight="298.0" prefWidth="413.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextArea fx:id="nameArea" prefHeight="200.0" prefWidth="200.0" promptText="Name:" GridPane.columnIndex="1" />
+   </children>
+</GridPane>

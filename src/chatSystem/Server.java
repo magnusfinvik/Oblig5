@@ -28,6 +28,7 @@ public class Server extends Application {
             loader.setLocation(Server.class.getResource("ServerView.fxml"));
             Pane rootLayout = loader.load();
             Scene scene = new Scene(rootLayout);
+            primaryStage.setTitle("ChatServer");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch(IOException e) {
