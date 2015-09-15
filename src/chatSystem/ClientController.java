@@ -76,12 +76,12 @@ public class ClientController implements Initializable{
     @FXML
     public void connect() {
         try {
-            socket = new Socket("localhost", 8000);
+            socket = new Socket("192.168.0.124", 8000);
             new Thread(() -> {
                     streamCreatorAndMore();
             }).start();
         } catch (Exception e){
-
+            System.out.println("erroooorrrr");
         }
     }
 }
